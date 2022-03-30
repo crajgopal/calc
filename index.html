@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href ="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <fieldset>
+       <legend> <h1>Generation - Calculator</h1></legend>
+
+    <div class="container">
+      <strong>Standard  Calculator</strong>
+
+      <!--  <div id ="txt"> </div>-->
+
+      <form name = "form1">  
+        <input class= "textview" name = "textview" id ="txt">  
+        </form>  
+       
+
+        <div class="key">
+         <div class="buttons">
+   <div class="button" id ="clear" onclick="form1.txt.value=''">clear</div>
+   <div class="button" id ="divide" value ="divide" onclick="insert('/')">&divide;</div>
+   <div class="button" id ="CE" onclick="form1.txt.value=''">CE</div>
+   <div class="button" id ="backspace" onclick="backspace()">⌫</div>
+   <div class="button" id ="7" value ="7" onclick="insert(7)">7</div>
+   <div class="button" id ="8" value="8" onclick="insert(8)" >8</div>
+   <div class="button" id ="9" value="9" onclick ="insert(9)">9</div>
+   <div class="button" id ="multiply" value ="*" onclick="insert('*')">X</div>
+   <div class="button" id ="4" value="4" onclick ="insert(4)">4</div>
+   <div class="button" id ="5" value ="5" onclick="insert(5)">5</div>
+   <div class="button" id ="6" value ="6" onclick="insert(6)">6</div>
+   <div class="button" id ="-" value ="-" onclick="insert('-')">-</div>
+   <div class="button" id ="1" value ="1" onclick="insert(1)">1</div>
+   <div class="button" id ="2" value ="2" onclick="insert(2)">2</div>  
+   <div class="button" id ="3" value ="3" onclick="insert(3)">3</div>
+   <div class="button" id ="+" value ="+" onclick="insert('+')" >+</div>
+   <div class="button" id ="+/-"value ="+/-" onclick="form1.txt.value= -(form1.txt.value)">+/-</div>
+   <div class="button"id ="0" value ="0" onclick="insert('0')">0</div>
+   <div class="button" id ="." value ="." onclick="insert('.')">.</div>
+   <div class="button" id ="=" onclick="equal()">=</div>
+
+
+
+            </div>
+        </div>
+    </div>
+    <details>
+        <summary class="sum"><b>About Author</b></summary>
+        <p class="email"> <a href="mailto:crajgopal2021@gmail.com"><b>Raj</b></a> : Learning  Salesforce development  @ Generation  </p>
+      </details>
+    
+    </fieldset>
+</body>
+<script src ="calc.js" ></script>
+
+</html>
